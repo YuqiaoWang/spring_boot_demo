@@ -1,0 +1,34 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script>
+        function displayDate(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+
+        function showDate() {
+            var date = new Date();
+            alert(date.getDate());
+        }
+    </script>
+</head>
+
+<body>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+    <div>
+        <input type="button" name="date" value="date" onclick="javascript.showDate()">
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
